@@ -1,4 +1,61 @@
+$primary-color: #fff;
 * {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 0;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  background: #222;
+  .nav {
+    // display: block;
+    position: relative;
+    height: 250px;
+    background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
+    h1 {
+      position: absolute;
+      font-weight: 500;
+      font-size: 3em;
+      //text-align: center;
+      margin: 0;
+      padding-top: 2em;
+      left: 50%;
+      transform: translate(-50%);
+      color: $primary-color;
+    }
+    .nav-social-icons {
+      position: absolute;
+      padding-top: 1.2em;
+      right: 0;
+
+      a {
+        padding-right: 1.2em;
+        font-size: 1.3em;
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+#contact {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10em;
+  font-size: 1.4em;
+  background: none;
+
+  a {
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid $primary-color;
+    color: $primary-color;
+    font-size: 1.3em;
+    text-decoration: none;
+  }
 }

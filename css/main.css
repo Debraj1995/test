@@ -1,5 +1,74 @@
 * {
   border: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-top: 0;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  background: #222;
+}
+
+body .nav {
+  position: relative;
+  height: 250px;
+  background: -webkit-gradient(linear, left top, right top, from(#f12711), to(#f5af19));
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+body .nav #avatar {
+  position: absolute;
+  width: 200px;
+  padding-top: 0.2em;
+}
+
+body .nav h1 {
+  position: absolute;
+  font-weight: 500;
+  font-size: 3em;
+  margin: 0;
+  padding-top: 2em;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #fff;
+}
+
+body .nav .nav-social-icons {
+  position: absolute;
+  padding-top: 1.2em;
+  right: 0;
+}
+
+body .nav .nav-social-icons a {
+  padding-right: 1.2em;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+#contact {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-top: 10em;
+  font-size: 1.4em;
+  background: none;
+}
+
+#contact a {
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 1.3em;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
